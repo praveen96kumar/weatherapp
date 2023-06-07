@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat+Alternates&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6876cfe3da.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="imagecontainer">
+            <img src="Union 1.svg" alt="weather app" width="300px" height="600px">
+
+            <div class="time" data-clock>9.42</div>
+            <div class="icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+
+            <div class="summary" data-summary>sunny day</div>
+            <canvas id="icon1" width="128" height="128"></canvas>
+            <div class="location" data-place>chennai</div>
+            <div class="icon-temperature">
+                <i class="fas fa-thermometer-full"></i>
+            </div>
+            <div class="temperature" data-temp>28 </div>
+        </div>
+    </div>
+
+    <script src="skycons.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

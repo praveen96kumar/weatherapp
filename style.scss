@@ -1,0 +1,110 @@
+
+*{
+    padding: 0;
+    margin : 0;
+    box-sizing:border-box;
+
+}
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.5rem;
+    background-image: linear-gradient(135deg, #555657 0%, #c3cfe2 100%);
+    color:black;
+}
+ .wrapper{
+    height:100vh;
+    width:100vw;
+    display :flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.imagecontainer{
+
+    position:relative;
+   
+
+       canvas{
+           position:absolute;
+           top:41%;
+           left:28%;
+       }
+
+     &::after{
+          content :"";
+          display:block;
+         height:542px;
+         width:269px;
+         border-radius:25px;
+         background-image: linear-gradient(90deg, #f5f7fa 0%, #c3cfe2 100%);
+         //background:rgb(253,183,194) 
+         position:absolute;
+         top:29px;
+         left:18px;
+         right:0;
+         bottom:0;
+         z-index:-2;
+         box-shadow: 1px 0px 30px 20px rgba(0,0,0,0.5)
+
+     }
+  
+}
+
+
+
+
+
+
+
+.time{
+    position:absolute;
+    top:7%;
+    left:13%;
+    font-size:0.7rem;
+   
+}
+
+.icons{
+    font-size:0.7rem;
+    position:absolute;
+    top:7%;
+    right:9%;
+}
+
+.summary{
+    position:absolute;
+    top:27%;
+    left:28%;
+    font-family: 'Amatic SC', cursive;
+    font-size:2rem;
+}
+
+.location{
+    position:absolute;
+    bottom:30%;
+    left:28%;
+}
+
+.temperature{
+    position:absolute;
+    bottom:20%;
+    left:37%;
+}
+
+.icon-temperature{
+    position:absolute;
+    bottom:20%;
+    left:29%;
+
+        &::after{
+            content:"";
+            width:136px;
+            height:5px;
+            background:#707070;
+            position:absolute;
+            top:101px;
+            left:-6px;
+        }
+}
